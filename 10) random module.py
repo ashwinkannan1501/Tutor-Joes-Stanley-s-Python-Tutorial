@@ -1,0 +1,27 @@
+# Random module
+import random
+
+lists = [10, 85, 26, 23, 45]
+#random.seed(a=8, version=8)
+print("random() function :- ", random.random())
+print("randint() function :- ", random.randint(a=1, b=5))
+print("randrange() function :- ", random.randrange(start=2, stop=10, step=2))
+random.shuffle(lists)
+print("shuffle() function :- ", lists)
+print("choice() function :- ", random.choice(lists))
+print("choices() function :- ", random.choices(lists))
+print("sample() function :- ", random.sample(lists, 2))
+print("getstate() function :- ", random.getstate())
+print("getrandbits() function :- ", random.getrandbits(8))
+print("gauss() function :- ", random.gauss(15, 56))
+print("betavariate() function :- ", random.betavariate(45, 26))
+print("gammavariate() function :- ", random.gammavariate(15, 26))
+print("normalvariate() function :- ", random.normalvariate(75, 85))
+print("lognormvariate() function :- ", random.lognormvariate(12, 45))
+print("expovariate() function :- ", random.expovariate(23))
+print("vonmisesvariate() function :- ", random.vonmisesvariate(75, 89))
+print("paretovariate() function :- ", random.paretovariate(75))
+print("weiullvariate() function :- ", random.weibullvariate(56, 23))
+print("setstate() function :- ", random.setstate(random.getstate()))
+print("triangular() function :- ", random.triangular())
+print("uniform() function :- ", random.uniform(45, 23))
